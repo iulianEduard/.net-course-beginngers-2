@@ -1,0 +1,48 @@
+
+
+Console.WriteLine("Introdu primul numar:");
+            int var1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introdu numarul 2:");
+            int var2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introdu al treiler anumar:");
+            int var3 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introdu al 4-lea numar:");
+            int var4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introdu al 5-lea numar:");
+            int var5 = Convert.ToInt32(Console.ReadLine());
+            int[] intArray;
+            intArray = new int[5] { var1, var2, var3, var4, var5 };
+            int maxi = intArray.Max();
+            Console.WriteLine("Max no. is: {0}", ( maxi));
+            int mini = intArray.Min();
+            Console.WriteLine("Min is : {0}",(mini));
+            float artm = intArray.Sum();
+            Console.WriteLine("Media aritmetica este :{0}",artm / 2);
+            int count=0;
+            int countimp = 0;
+
+            foreach (int i in intArray)
+            {
+                if (i % 2 == 0)
+                {
+                    
+                    count = count + i;
+                     
+                }
+                else
+                {
+                    countimp = countimp + i;
+                }
+            }
+            Console.WriteLine("Suma numerelor pare este: {0}",count);
+            Console.WriteLine("Suma numerelor impare este: {0}", countimp);
+            int[] doubleArray = new int[5];
+            doubleArray[0] = Convert.ToInt32(Math.Pow(var1, 2));
+            doubleArray[1] = Convert.ToInt32(Math.Pow(var2, 2));
+            doubleArray[2] = Convert.ToInt32(Math.Pow(var3, 2));
+            doubleArray[3] = Convert.ToInt32(Math.Pow(var4, 2));
+            doubleArray[4] = Convert.ToInt32(Math.Pow(var5, 2));
+            foreach (int i in doubleArray)
+            {
+                Console.WriteLine(i);
+            }
